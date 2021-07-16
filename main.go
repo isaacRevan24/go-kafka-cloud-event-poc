@@ -10,8 +10,11 @@ import (
 
 func main() {
 
+	// Context initialize
 	ctx := context.Background()
+	// Gin server initialize
 	r := gin.Default()
+
 	broker := []string{"localhost:9092"}
 	topic := "gamification.topic.consumer"
 	groupid := "group_1"
